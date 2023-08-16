@@ -1,4 +1,5 @@
 Multiple exchange data capturer.
+
 Depending on the configuration variables, this script reads from various
 exchanges, via websocket, the tickets of the configured currency pair, and
 saves them in a file in JSON format for later analysis.
