@@ -1,20 +1,16 @@
-Multiple exchange data capturer.
-
+<h1>Multiple exchange websocket ticker to JSON with CCXT Pro</h1>
 Depending on the configuration variables, this script reads from various
 exchanges, via websocket, the tickets of the configured currency pair, and
 saves them in a file in JSON format for later analysis.
 
-Installation:
-
+<h3>Installation:</h3>
 To run the script you need Python 3.10 or higher.
-The dependencies are installed from the CMD with the following commands:
+The dependencies are installed from the CMD with the following commands:<br><br>
 
-pip install ccxt
+<b>pip install ccxt</b><br>
+<b>pip install ccxtpro</b>
 
-pip install ccxtpro
-
-Data packaging:
-
+<h3>Data packaging:</h3>
 Each time a price update is obtained from a market of a exchange, a new 
 frame data package is created, containing the last market tickers on 
 each of the exchanges.
@@ -35,11 +31,9 @@ has its own timestamp, we recommend analysts use in the graphs and
 analysis the timestamp of the package frame. The timestamp of each 
 ticker within the frame is used to know how updated the ticker data is.
 
-Timestamps are saved in Timestamp format and Datetime format:
-
-"timestamp"
-
-"datetime"
+Timestamps are saved in Timestamp format and Datetime format:<br><br>
+<b>"timestamp"</b><br>
+<b>"datetime"</b>
 
 The data file resulting from the capture consists of multiple lines,
 where each line contains a packet frame. The name of the data file
@@ -53,28 +47,25 @@ The name of the market metadata file has the following format:
 market_base_quote_milliseconds.json
 '''
 
-Santiago A. Orellana Perez
-tecnochago@gmail.com
-14/ogosto/2023
+Santiago A. Orellana Perez<br>
+tecnochago@gmail.com<br>
+14/agosto/2023<br>
 
 ___________________________________________________________
 
-Capturador de datos multiple exchange.
-
+<h1>Capturador de tickers de multiples exchanges con CCXT Pro.</h1>
 En dependencia de las variables de configuración, este script lee de varios
 exchanges, mediante websocket, los tickets del par de monedas configurado, y
 los guarda en un fichero con formato JSON para su posterior análisis.
 
-Instalación:
-
+<h3>Instalación:</h3>
 Para ejecutar el script se necesita Python 3.10 o superior.
-Las dependencias se instalan desde el CMD con los siguientes comandos:
+Las dependencias se instalan desde el CMD con los siguientes comandos:<br><br>
 
-pip install ccxt
+<b>pip install ccxt</b><br>
+<b>pip install ccxtpro</b>
 
-pip install ccxtpro
-
-Empaquetado de datos:
+<h3>Empaquetado de datos:</h3>
 Cada vez que se optiene una actualización de precios de un mercado de un
 exchange, se crea un nuevo paquete de datos frame, que contiene los ultimos
 tickers del mercado en cada uno de los exchanges. 
@@ -96,11 +87,9 @@ en las graficas y análisis la marca de tiempo timestamp del paquete
 frame. La marca de tiempo de cada ticker dentro del frame, sirve para
 conocer que tan actualizado está el dato del ticker.
 
-Las marcas de tiempo se guardan en formato Timestamp y Datetime:
-
-"timestamp"
-
-"datetime"
+Las marcas de tiempo se guardan en formato Timestamp y Datetime:<br><br>
+<b>"timestamp"</b><br>
+<b>"datetime"</b>
 
 El fichero de datos resultante de la captura se compone de multiples lineas,
 donde cada linea contiene un paquete frame. El nombre del fichero de datos
@@ -114,6 +103,6 @@ El nombre del fichero de metadatos de mercado tiene el siguiente formato:
 market_base_quote_milliseconds.json
 '''
 
-Santiago A. Orellana Perez
-tecnochago@gmail.com
-14/ogosto/2023
+Santiago A. Orellana Perez<br>
+tecnochago@gmail.com<br>
+14/agosto/2023<br>
