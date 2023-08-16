@@ -5,13 +5,16 @@ exchanges, via websocket, the tickets of the configured currency pair, and
 saves them in a file in JSON format for later analysis.
 
 Installation:
+
 To run the script you need Python 3.10 or higher.
 The dependencies are installed from the CMD with the following commands:
 
 pip install ccxt
+
 pip install ccxtpro
 
 Data packaging:
+
 Each time a price update is obtained from a market of a exchange, a new 
 frame data package is created, containing the last market tickers on 
 each of the exchanges.
@@ -35,6 +38,7 @@ ticker within the frame is used to know how updated the ticker data is.
 Timestamps are saved in Timestamp format and Datetime format:
 
 "timestamp"
+
 "datetime"
 
 The data file resulting from the capture consists of multiple lines,
