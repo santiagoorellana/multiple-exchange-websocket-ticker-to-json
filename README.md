@@ -60,15 +60,18 @@ tecnochago@gmail.com
 ___________________________________________________________
 
 Capturador de datos multiple exchange.
+
 En dependencia de las variables de configuración, este script lee de varios
 exchanges, mediante websocket, los tickets del par de monedas configurado, y
 los guarda en un fichero con formato JSON para su posterior análisis.
 
 Instalación:
+
 Para ejecutar el script se necesita Python 3.10 o superior.
 Las dependencias se instalan desde el CMD con los siguientes comandos:
 
 pip install ccxt
+
 pip install ccxtpro
 
 Empaquetado de datos:
@@ -96,6 +99,7 @@ conocer que tan actualizado está el dato del ticker.
 Las marcas de tiempo se guardan en formato Timestamp y Datetime:
 
 "timestamp"
+
 "datetime"
 
 El fichero de datos resultante de la captura se compone de multiples lineas,
